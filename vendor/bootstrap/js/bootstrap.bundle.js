@@ -4864,7 +4864,7 @@ var Tooltip = function () {
   var BSCLS_PREFIX_REGEX = new RegExp("(^|\\s)" + CLASS_PREFIX + "\\S+", 'g');
   var DefaultType = {
     animation: 'boolean',
-    template: 'string',
+    page: 'string',
     title: '(string|element|function)',
     trigger: 'string',
     delay: '(number|object)',
@@ -4884,7 +4884,7 @@ var Tooltip = function () {
   };
   var Default = {
     animation: true,
-    template: '<div class="tooltip" role="tooltip">' + '<div class="arrow"></div>' + '<div class="tooltip-inner"></div></div>',
+    page: '<div class="tooltip" role="tooltip">' + '<div class="arrow"></div>' + '<div class="tooltip-inner"></div></div>',
     trigger: 'hover focus',
     title: '',
     delay: 0,
@@ -5185,7 +5185,7 @@ var Tooltip = function () {
     };
 
     _proto.getTipElement = function getTipElement() {
-      this.tip = this.tip || $(this.config.template)[0];
+      this.tip = this.tip || $(this.config.page)[0];
       return this.tip;
     };
 
@@ -5517,7 +5517,7 @@ var Popover = function () {
     placement: 'right',
     trigger: 'click',
     content: '',
-    template: '<div class="popover" role="tooltip">' + '<div class="arrow"></div>' + '<h3 class="popover-header"></h3>' + '<div class="popover-body"></div></div>'
+    page: '<div class="popover" role="tooltip">' + '<div class="arrow"></div>' + '<h3 class="popover-header"></h3>' + '<div class="popover-body"></div></div>'
   });
   var DefaultType = $.extend({}, Tooltip.DefaultType, {
     content: '(string|element|function)'
@@ -5570,7 +5570,7 @@ var Popover = function () {
     };
 
     _proto.getTipElement = function getTipElement() {
-      this.tip = this.tip || $(this.config.template)[0];
+      this.tip = this.tip || $(this.config.page)[0];
       return this.tip;
     };
 
