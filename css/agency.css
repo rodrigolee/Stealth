@@ -252,7 +252,8 @@ h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-    display: flex;
+    display: inline-block;
+    vertical-align:center ;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -282,7 +283,15 @@ h6 {
     line-height: 59px;
     padding: 0 19%;
     text-transform: uppercase;
+    display:block;
+    text-align:center;
+    margin-top:200px;
   }
+  .main-slider a {
+    color: rgba(235, 221, 25, 0.986);
+    font-size: 24px;
+  }
+  
   .main-slider .swiper-pagination-bullet {
     width: 20px;
     height: 20px;
@@ -346,7 +355,7 @@ img::-moz-selection {
 
 body {
   -webkit-tap-highlight-color: #fed136; }
-
+/*-----Main Nav----*/
 #mainNav {
   background-color: #212529; }
   #mainNav .navbar-toggler {
@@ -372,9 +381,35 @@ body {
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
       color: #fed136; }
+/*------Second Nav-----*/
+#secondNav {
+  background-color: #212529; }
+  #secondNav .navbar-toggler {
+    font-size: 12px;
+    right: 0;
+    padding: 13px;
+    text-transform: uppercase;
+    color: white;
+    border: 0;
+    background-color: #fed136;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  #secondNav .navbar-brand {
+    color: #fed136;
+    font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive; }
+    #secondNav .navbar-brand.active, #secondNav .navbar-brand:active, #secondNav .navbar-brand:focus, #secondNav .navbar-brand:hover {
+      color: #fec503; }
+  #secondNav .navbar-nav .nav-item .nav-link {
+    font-size: 90%;
+    font-weight: 400;
+    padding: 0.75em 0;
+    letter-spacing: 1px;
+    color: white;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    #secondNav .navbar-nav .nav-item .nav-link.active, #secondNav .navbar-nav .nav-item .nav-link:hover {
+      color: #fed136; }
 
 @media only screen and (min-width: 992px) {
-  #mainNav {
+  #secondNav {
     padding-top: 25px;
     padding-bottom: 25px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
@@ -382,20 +417,48 @@ body {
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
     background-color: transparent; }
-    #mainNav .navbar-brand {
+    #secondNav .navbar-brand {
       font-size: 1.75em;
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       transition: all 0.3s; }
-    #mainNav .navbar-nav .nav-item .nav-link {
+    #secondNav .navbar-nav .nav-item .nav-link {
       padding: 1.1em 1em !important; }
-    #mainNav.navbar-shrink {
+    #secondNav.navbar-shrink {
       padding-top: 0;
       padding-bottom: 0;
       background-color: #212529; }
-      #mainNav.navbar-shrink .navbar-brand {
+      #secondNav.navbar-shrink .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0; } }
+@media only screen and (min-width: 992px) {
+  #secondNav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent; }
+    #secondNav .navbar-brand {
+      font-size: 1.75em;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s; }
+    #secondNav .navbar-nav .nav-item .nav-link {
+      padding: 1.1em 1em !important; }
+    #secondNav.navbar-shrink {
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: #212529; }
+      #secondNav.navbar-shrink .navbar-brand {
+        font-size: 1.25em;
+        padding: 12px 0; } }
+  .card-body{
+    text-align:center;
+    font-size: 40px;
+    text-decoration: none;
+  }
 header.masthead {
   text-align: center;
   color: white;
