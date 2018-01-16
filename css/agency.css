@@ -149,21 +149,48 @@ h6 {
   /* Hamburger Menu CSS
   -------------------------------------------------- */
   .dropdown-menu{
-    background-color: transparent;
-    left:20px;
-    border-left:dotted #fec503;
-    border-right:dotted #fec503;
-    border-bottom:dotted #fec503;
-    width:50px;
-    margin-top:-15px;
-    background-color: black;
+
+    width:100%;
+    padding:10px 18px;
+    box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+    border-radius:3px;
+    background:#212529;
+    
+    
   }
+  .dropdown-menu ul {
+    display:inline-block;
+  }
+  .dropdown-menu li {
+    margin:0px 50px 0px 0px;
+    float:left;
+    list-style:none;
+    font-size:17px;
+    
+  }
+ 
+  .dropdown-menu li:last-child {
+      margin-right:0px;
+  }
+  
+  .dropdown-menu a {
+      text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+      color:white;
+      transition:color linear 0.15s;
+      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
+  .dropdown-menu a:hover, .dropdown-menu .current-item a {
+      text-decoration:none;
+      color:#fec503;
+  }
+ 
   
   a
   {
     text-decoration: none;
     color: rgb(255, 255, 255);
-    margin-left:10px;
+    margin-left:12px;
     transition: color 0.3s ease;
     position:relative;
   }
@@ -173,72 +200,7 @@ h6 {
     color:#fec503;
   }
   
-  #menuToggle
-  {
-    display: block;
-    position: relative;
-    top: 10px;
-    margin-right:10px;
-    
-    z-index: 1;
-    
-    -webkit-user-select: none;
-    user-select: none;
-  }
   
-  #menuToggle input
-  {
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    top: -7px;
-    left: -5px;
-    
-    cursor: pointer;
-    
-    opacity: 0; /* hide this */
-    z-index: 2; /* and place it over the hamburger */
-    
-    -webkit-touch-callout: none;
-  }
-  
-  /*
-   * Just a quick hamburger
-   */
-  
-  #menu
-  {
-    position: absolute;
-    width: 300px;
-    margin: -100px 0 0 -50px;
-    padding: 50px;
-    padding-top: 125px;
-    
-    background: transparent;
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
-    
-    transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
-    
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-  }
-  
-  #menu li
-  {
-    padding: 10px 0;
-    font-size: 22px;
-  }
-  
-  /*
-   * And let's slide it in from the left
-   */
-  #menuToggle input:checked ~ ul
-  {
-    transform: none;
-  }
   /*Swiper*/
   .swiper-container {
     width: 100%;
@@ -825,4 +787,7 @@ ul.social-buttons {
     background-color: #212529; }
     ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
       background-color: #fed136; }
+img.img-fluid{
+margin:8px;
+}
     
