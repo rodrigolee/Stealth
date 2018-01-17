@@ -790,4 +790,13 @@ ul.social-buttons {
 img.img-fluid{
 margin:8px;
 }
-    
+.product-description{
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: left;
+  margin-right:5px;
+  margin-left:5px;
+}
+.amazon-link{
+  background-color:transparent;
+  color: #fed136;
+}
