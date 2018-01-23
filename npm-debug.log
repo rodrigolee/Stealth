@@ -22,18 +22,18 @@
 11 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16
 11 verbose stack     at tryToString (fs.js:456:3)
 11 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:443:12)
-12 verbose cwd /Users/rodrigolee/Desktop/AAP
+12 verbose cwd /Users/rodrigolee/Desktop/Amazon Warrior
 13 error Darwin 16.7.0
 14 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "slideout"
 15 error node v6.11.0
 16 error npm  v3.10.10
-17 error file /Users/rodrigolee/Desktop/AAP/package.json
+17 error file /Users/rodrigolee/Desktop/Amazon Warrior/package.json
 18 error code EJSONPARSE
 19 error Failed to parse json
 19 error Unexpected token ':' at 1:17
 19 error   "dependencies": {
 19 error                 ^
-20 error File: /Users/rodrigolee/Desktop/AAP/package.json
+20 error File: /Users/rodrigolee/Desktop/Amazon Warrior/package.json
 21 error Failed to parse package.json data.
 21 error package.json must be actual JSON, not just JavaScript.
 21 error
